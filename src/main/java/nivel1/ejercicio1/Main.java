@@ -21,7 +21,9 @@ public class Main {
         //METHOD THAT DOES THE SORTING BASED ON A COMPARATOR, otherwise will take its natural sort.1st Mayus,2nd minus
         // We can only sort LIst, not sets, because those are not ordered by definition.
         Collections.sort(files,alphabeticalComparator);
-        System.out.println(files);
+        for (String file:files) {
+            System.out.println(file);
+        }
 
     }
     public static List<String> listFilesUsingJavaIO(String dir) {
